@@ -1,0 +1,14 @@
+{
+  "backend/main.mo": "Minimal Motoko canister actor with no defined methods.",
+  "feature_evidence.json": "Feature evidence report describing a change to show a text-only message on Yes click and listing affected files and components.",
+  "frontend-file-summaries.txt": "Prewritten summaries of key frontend files including App.tsx behavior and theme styling.",
+  "frontend/index.css": "Base Tailwind CSS variables and theming for light/dark modes using OKLCH values.",
+  "frontend/index.html": "HTML entry point setting up the root div and loading the React app.",
+  "frontend/src/App.tsx": "Main interactive Valentine UI with moving No button and text-only Yes result view.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages a backend actor instance tied to Internet Identity state.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context and hooks for managing Internet Identity login, identity persistence, and auth client behavior.",
+  "frontend/src/index.css": "Tailwind-based global styles with OKLCH theme variables, typography, and fade-in animation.",
+  "frontend/src/main.tsx": "React root initialization wrapping App with InternetIdentity and React Query providers.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme colors, radius, fonts, animations, and plugin setup.",
+  "project_state.json": "Defines the current project state for a Valentine-themed interactive web page, listing existing features, new requests, and architectural notes. Tracks versioning, requirements, and behavior such as the evasive No button and the post-Yes text message."
+}

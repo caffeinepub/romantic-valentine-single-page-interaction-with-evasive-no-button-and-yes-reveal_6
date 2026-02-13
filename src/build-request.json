@@ -1,0 +1,48 @@
+{
+  "kind": "build_request",
+  "title": "Simplify the post-Yes view to text-only message",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "text": "Update the post-Yes result view so that after the user clicks “Yes”, the app shows a simple text-only message using the previously mentioned wording (“Found me jiyuu ❤️ , By the way good choice 😘”) and does not display the meme image.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-4"
+        ],
+        "quotes": [
+          "After sayng yes make it just simple saying just mention before"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking the “Yes! 💖” button switches from the question/options view to a result view.",
+        "The result view displays the exact message text: “Found me jiyuu ❤️ , By the way good choice 😘”.",
+        "The result view does not render any meme image (i.e., no <img> for /assets/generated/valentine-meme.dim_1200x1200.png).",
+        "The “No” evasive behavior and the initial Valentine prompt remain unchanged."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
+    "Keep the backend as a single Motoko actor; no backend changes are required for this request."
+  ],
+  "nonGoals": [
+    "Adding new animations or additional interaction flows after clicking “Yes”.",
+    "Introducing backend storage, analytics, or any network calls for the post-Yes message."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

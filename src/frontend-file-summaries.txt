@@ -1,0 +1,5 @@
+{
+  "frontend/src/App.tsx": "Main Valentine's Day interactive component with Yes/No buttons where the No button evades interaction by repositioning, and displays a simple text-only message when Yes is clicked (no meme image).",
+  "frontend/src/index.css": "Global styles with romantic pink-themed OKLCH color system for both light and dark modes, custom animations, and typography settings.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended pink color palette, custom border radius, and Inter font family for the romantic Valentine theme."
+}
